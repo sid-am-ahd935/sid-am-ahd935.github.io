@@ -1,0 +1,4 @@
+
+# Removing upload of images through git as it keeps crashing, manual upload of images in the appropriate directory using file upload in GitHub is advised.
+*.jpg
+*.png
