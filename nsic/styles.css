@@ -14,7 +14,7 @@ body {
 }
 
 .translucent-box {
-  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for transparency */
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust the alpha value for transparency */
   border-radius: 15px;
   padding: 20px;
   max-width: 80%;
@@ -23,9 +23,9 @@ body {
 }
 
 header {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Separation line */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6); /* Separation line */
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .logo {
@@ -45,8 +45,8 @@ header {
 
 nav ul {
   list-style: none;
-  padding: 0;
-  margin: 0;
+  padding: 5px;
+  margin: 0px;
   display: flex;
 }
 
@@ -69,4 +69,48 @@ nav ul li a {
   color: white;
   font-size: 1.1em;
   line-height: 1.6;
+}
+
+/* For bleeding text in mobile devices */
+@media screen and (max-width: 768px) {
+  .translucent-box {
+    max-width: 90%; /* Adjust the maximum width for smaller screens */
+  }
+
+  .description-box {
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .description-box p {
+    font-size: 3vw; /* Set font size as 3% of the viewport width for better scalability */
+  }
+}
+
+
+/*  Icon Footer  */
+
+.footer {
+  background-color: #333; /* Footer background color */
+  padding: 20px;
+  text-align: center;
+}
+
+.social-icons {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.icon {
+  width: 30px; /* Adjust the icon size */
+  fill: white; /* Icon color */
+}
+
+a {
+  text-decoration: none;
 }
